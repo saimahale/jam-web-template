@@ -1,0 +1,578 @@
+details, footer, header, section {
+    display: block;
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+ body{
+    margin: 0px;
+    padding: 0px;
+ }
+
+a {
+    text-transform: none;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+a:hover, a:active {
+    outline: 0;
+    /* color: #a8080f; */
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: 10px 0px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-inline{
+    display: inline;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: 'Crimson Text', serif;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 0.83em;
+}
+
+h6 {
+    font-size: 0.75em;
+}
+
+small {
+    font-size: 75%;
+}
+
+dl, menu, ol, ul {
+    margin: 0;
+}
+
+dd {
+    margin: 0;
+}
+
+.portfolio-wrap ul, header ul, footer ul {
+    list-style: none;
+    list-style-image: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    border: 0 none;
+    -ms-interpolation-mode: bicubic;
+}
+
+figure, form {
+    margin: 0;
+}
+.fw-bold{
+    font-weight: bold;    
+}
+
+button, input {
+    line-height: normal;
+}
+
+textarea {
+    height: auto;
+    vertical-align: top;
+}
+
+button{
+    cursor: pointer;
+    -webkit-appearance: button;
+    *overflow: visible;
+}
+
+
+input[type="checkbox"]{
+    box-sizing: border-box;
+    padding: 0;
+    *height: 13px;
+    *width: 13px;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    
+}
+.m-0{
+    margin: 0px;
+}
+
+.mb-3{
+margin-bottom: 20px;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.bg-primary{
+    background-color: #fe828a;
+}
+.text-light{
+    color: #ffffff;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.d-md-block{
+    display: none;
+}
+
+.text-center{
+    text-align: center;
+}
+ul li {
+    font-size: 12px;
+}
+
+.jutify-content-between{
+    justify-content: space-between;
+}
+
+.sec-title{
+    padding-top: 40px;
+    font-weight: bolder;
+    font-size: 2.5em;
+    color: #000000;
+    text-align: center;
+}
+
+.navbar ul li, .share-icon ul li{
+    text-align: center;
+    margin: 20px 15px 0px 15px;
+}
+.navbar ul li a, .share-icon ul li a{
+color: #ffffff;
+font-size: 14px;
+}
+
+.social-icon ul li{
+    text-align: center;
+    margin: 0px 15px 20px 15px;
+}
+.social-icon ul{
+    margin-top: 50px;
+}
+
+
+.title{
+font-size: 50px;
+font-weight: bolder;
+}
+
+.btn{
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+.btn-danger{
+    background-color: #d8013c;
+}
+
+header{
+    background-image: url(images/header-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.jam-img img{
+    width: 100%;
+    max-width: 500px;
+}
+.portfolio-wrap ul{
+    justify-content: center;
+}
+
+.portfolio-wrap ul li a{
+    color: #8a8a8a;
+    margin: 0px 5px;
+    font-size: 1.3em;
+}
+.portfolio-wrap ul li.active a, .portfolio-wrap ul li a:hover{
+    color: #000000;
+}
+.portfolio-wrap ul li{
+    color: #000000;
+    border-bottom: 4px solid #8a8a8a;
+    padding: 5px 10px 0px 10px;
+}
+.portfolio-wrap ul li.active, .portfolio-wrap ul li:hover{
+    color: #000000;
+    border-bottom: 4px solid #fe828a;
+}
+
+.portfolio-grid, .grid-4{
+    display: grid;
+    column-gap: 25px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+.portfolio-items, .grid-item {
+    text-align: center;
+    margin-top: 15px ;
+}
+.portfolio-items{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    border-radius: 20px;
+}
+.portfolio-items .basic-detail .product-image{
+    width: 100%;
+    max-width: 150px;
+}
+.portfolio-items .basic-detail .price{
+    text-align: center;
+    font-weight: bold;
+}
+
+.portfolio-items .product-detail{
+    position: absolute;
+    top: 5px;
+    display: none;
+    margin: 5px;
+    opacity: 0.9;
+    color: #ffffff;
+}
+.portfolio-items .product-detail .discount{
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 0px;
+}
+.portfolio-items:hover, .portfolio-items:hover .product-detail{
+    display: block;
+    background: linear-gradient(90deg, rgba(254,130,138,1) 57%, rgba(254,62,64,1) 86%);
+    opacity: 0.9;
+}
+.portfolio-items:hover .price, .portfolio-items:hover .label{
+    display: none;
+}
+
+.product-features .grid-item, .product-jorney .grid-item, .testimonial .grid-item{
+    text-align: left;
+}
+.product-features .fa-regular{
+    color: #fe828a;
+    font-size: 20px;
+}
+.product-features .feature-title{
+    font-weight: bold;
+    margin: 15px 0px 0px 0px;
+    
+}
+
+
+.left-image{
+    width: 100%;
+    padding: 20px 10px;
+}
+.left-image img{
+    width: 100%;
+    height: 370px;
+}
+.img-fluid{
+    width: 100%;
+    height: 150px;;
+}
+
+.product-gallary .gallary-grid-item{
+    width: 200px;
+}
+.grid-2{
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.grid-3{
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.gallary-grid-item {
+    padding: 10px;
+    height: 100%;
+}
+
+.left-image, .right-image, .contact-form, .address{
+    width: 50%;
+}
+
+.left-image .label, .left-image .detail,.right-image .label, .right-image .detail{
+   margin: 0px 0px 5px 0px; 
+} 
+.left-image .detail, .right-image .detail, .product-features .detail, .product-jorney .detail, .testimonial .detail{
+color: #8a8a8a;
+}
+
+.product-jorney a, .testimonial a{
+    color: #fe828a;
+}
+.testimonial .author{
+    margin: 10px 10px;
+}
+.testimonial .author-name{
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+.testimonial .compony{
+    color: #8a8a8a;
+}
+
+footer{
+    background-image: url(images/footer-bg.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #ffffff;
+}
+.footer-container{
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px;
+}
+footer .sec-title{
+    text-align: center;
+    color: #ffffff;
+}
+footer .footer-container .detail{
+    color: #ffdddd;
+}
+
+section, footer{
+    position: relative;
+}
+footer .footer-frame img{
+    width: 350px;
+}
+
+.left-first-frame{
+    position: absolute;
+    top: 50%;
+}
+.left-first-frame img, .right-frame img{
+    width: 150px;
+}
+.left-second-frame{
+    position: absolute;
+    top: 20%;
+    left: 0px;
+}
+.left-second-frame img{
+    width: 100px;
+}
+.right-frame {
+    position: absolute;
+    top: 30%;
+    right: 0px;
+}
+.footer-frame {
+    position: absolute;
+    top: -25%;
+    right: 0px;
+}
+.mobile-navbar{
+    padding: 0px 20px;
+}
+.mob-social-icon{
+    display: none;
+}
+.mob-social-icon ul li{
+    margin: 10px;
+}
+@media screen and (max-width: 1300px) {
+    .left-second-frame, .left-first-frame, .right-frame, .footer-frame{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .grid-2 ,.grid-3, .grid-4, .portfolio-grid{
+        grid-template-columns: auto auto;
+        padding: 10px 0px;
+    }
+    .product-detail{
+        margin-top: 0px;
+        width: 90%;
+    }
+    .product-gallary .d-flex{
+        display: block;
+    }
+    
+    .left-image, .right-image, .contact-form, .address{
+        width: 100%;
+    }
+    .left-image{
+        padding: 0px;
+    }
+    
+    .mob-social-icon{
+        display: block;
+    }
+     .social-icon{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-2 ,.grid-3, .grid-4, .portfolio-grid{
+        padding: 10px 0px;
+    }
+    .portfolio-grid{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .product-features .grid-item, .product-jorney .grid-item, .testimonial .grid-item{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .product-gallary .d-flex, .footer-container .d-flex{
+        display: block;
+    }
+    .left-image, .right-image, .contact-form, .address{
+        padding: 0px;
+    }
+    .grid-2 ,.grid-3, .grid-4, .portfolio-grid{
+        grid-template-columns: auto auto;
+    }
+
+    header nav.d-flex, header nav .navbar .d-flex{
+        display: block;
+    }
+    .main-content{
+        padding: 0px 20px;
+    }
+    header nav .share-icon .d-flex{
+        justify-content: center;
+    }
+    .fa-bars{
+        padding-top: 30px;
+    }
+    .d-md-block{
+        display: block;
+    }
+    header, footer{
+        background: linear-gradient(90deg, rgba(254,130,138,1) 57%, rgba(254,62,64,1) 86%);
+    }
+    .web-logo, .navbar, .share-icon{
+        display: none;
+    }
+    .contact-form, .address{
+        padding: 15px 0px;
+    }
+    .product-gallary .gallary-grid-item{
+        width: 90%;
+        margin: 0px auto;
+    }
+    .product-gallary .gallary-grid-item img{
+        height: 200px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    header .main{
+        display: block;
+    }
+    .grid-2 ,.grid-3, .grid-4, .portfolio-grid{
+        padding:0px;
+    }
+    .portfolio-grid{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .product-features .grid-item, .product-jorney .grid-item, .testimonial .grid-item{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .product-gallary .d-flex, .footer-container .d-flex{
+        display: block;
+    }
+    .grid-2 ,.grid-3, .grid-4, .portfolio-grid{
+        grid-template-columns: auto;
+    }
+    .left-image, .right-image, .contact-form, .address{
+        padding: 0px;
+    }
+    
+
+    header nav.d-flex, header nav .navbar .d-flex{
+        display: block;
+    }
+    header nav .share-icon .d-flex{
+        justify-content: center;
+    }
+    .fa-bars{
+        padding-top: 30px;
+    }
+    .product-detail{
+        margin-top: 0px;
+        width: 90%;
+    }
+    .web-logo, .navbar, .share-icon{
+        display: none;
+    }
+    .contact-form form, .address .address-detail{
+        padding: 20px;
+    }
+    .portfolio-items:hover .price, .portfolio-items:hover .label {
+        display: block;
+        opacity: 0;
+    }
+    
+    .portfolio-wrap ul{
+        overflow-x: hidden;
+    }
+}
